@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<title>SIESGST NSS PORTAL</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" data-bs-theme="dark">
+    <div class="container-fluid">
+      <img src='img/nss.jpg' class='image'>
+        <a class="navbar-brand" href="index.html">NSS PORTAL</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center custom-navbar">
+                <li class="nav-item-active">
+                    <a class="nav-link" aria-current="page" href="index.html">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">ABOUT US</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="campaign.html">CAMPAIGN</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      ACTIVITIES
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">BLOOD DONATION</a></li>
+                      <li><a class="dropdown-item" href="#">PLANTATION DRIVE</a></li>
+                      <li><a class="dropdown-item" href="#">CLEANUP DRIVE</a></li>
+                  </ul>
+              </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="heads.html">HEADS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="join.html">JOINING NSS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="login.php">LOGIN</a>
+              </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class='box'>
+<div class="container box1">
+  <p class="lead"><strong>
+      Founded in 1969, The Motto of NSS "Not Me But You", reflects the essence of democratic living and upholds the
+      need for self-less service. NSS plays a vital role in our college community by actively engaging students in
+      various community service activities. The NSS unit at our college organizes and participates in events such
+      as blood donation drives, plantation programs, and cleanup initiatives. These activities not only contribute
+      to the welfare of the society but also instill a sense of responsibility and social awareness among the
+      students.
+      <br> <br>
+      The NSS program in our college is organized by dedicated student volunteers and supported by our faculty
+      members. Through their combined efforts, they create a positive impact on the community and address important
+      social issues. The activities conducted by NSS aim at fostering a spirit of empathy, teamwork, and leadership
+      among the students.
+      <br><br>
+      Students who participate in NSS not only contribute to the betterment of society but also gain valuable
+      skills and experiences. The program provides a platform for students to understand the diverse needs of the
+      community and work towards its betterment. It promotes the ideals of community service, selflessness, and
+      social responsibility, aligning with the overall mission of our college to nurture responsible and
+      compassionate individuals.
+    </strong></p>
+  <br>
+  <p class="mb-0">
+    <i class="bi bi-telephone-inbound-fill"></i><strong>PHONE : +91-9380-013-480 / +91-8277-307-946 </strong><br>
+    <i class="bi bi-envelope-at-fill"></i><strong>EMAIL : abc123@gmail.com / xyz123@gmail.com</strong><br>
+    <i class="bi bi-building-fill-add"></i><strong>ADDRESS : xyz (Monday to Friday, 9 am to 6 pm) </strong>
+  </p>
+</div>
+</div>
+
+<div class="loader-wrapper">
+    <div class="spinner-border text-light" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+</div>
+
+
+<footer class="bg-dark text-white text-center py-2">
+  <div class="container">
+      <p class="mb-0">&copy; <span id="currentYear"></span> SIES Graduate School Of Technology. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<script>
+    // Set current year dynamically
+    document.getElementById('currentYear').innerHTML = new Date().getFullYear();
+  
+    document.addEventListener('DOMContentLoaded', function () {
+      // Add a 2000ms (2 seconds) delay before hiding the loader
+      setTimeout(function () {
+        document.querySelector('.loader-wrapper').style.display = 'none';
+      }, 300);
+    });
+      
+  </script>
+    
+</body>
+</html>
