@@ -1,2 +1,1 @@
-# miniproject
-this is sem-4 mini project
+NSS Portal for SIESGST College.

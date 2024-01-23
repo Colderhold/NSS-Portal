@@ -86,7 +86,7 @@
 </div>
 
 <div class="loader-wrapper">
-    <div class="spinner-border text-light" role="status">
+    <div class="spinner-border spinner-border-lg text-light" style="width: 4rem; height: 4rem;" role="status">
       <span class="sr-only">Loading...</span>
     </div>
   </div>
@@ -103,12 +103,14 @@
     document.getElementById('currentYear').innerHTML = new Date().getFullYear();
   
     document.addEventListener('DOMContentLoaded', function () {
+      document.querySelector('.navbar').classList.add('d-none');
       // Add a 2000ms (2 seconds) delay before hiding the loader
       setTimeout(function () {
         document.querySelector('.loader-wrapper').style.display = 'none';
-      }, 300);
+        document.querySelector('.navbar').classList.remove('d-none');
+      }, 700);
     });
-      
+  
   </script>
     
 </body>
