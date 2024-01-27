@@ -1,0 +1,190 @@
+/* Normalize included Autoprefixer is on */
+
+/* Variable names without : symbol */
+#idm { color: #0067ac; }
+#mms { color: #a02842; }
+#bpo { color: #007680; }
+#white { color: #fff; }
+#black { color: #000; }
+
+* {
+  box-sizing: border-box;
+  font-family: Georgia, serif;
+}
+
+.flow-chart_input {
+  display: none;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(720deg);
+  }
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  90% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes textOpacity {
+  0% {
+    visibility: none;
+    opacity: 0;
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.flow-chart {
+  opacity: 0;
+  position: relative;
+  padding: 15%;
+  transition: all 200ms ease;
+  animation: scale 750ms ease-out 300ms forwards;
+}
+
+.flow-chart-svg {
+  animation: spin 1400ms ease-out 400ms forwards;
+  
+  text {
+    font-family: 'MyriadPro-Regular';
+    font-size: 11px;
+    opacity: 0;
+    &.flow-chart-title {
+      opacity: 0;
+      font-size: 27.8174px;
+    }
+  }
+}
+
+.flow-svg-outer-circle,
+.flow-svg-inner-circle {
+  fill: #fff;
+}
+
+.flow-chart-group1 {
+  background-color: red;
+}
+
+.flow-chart-group_shape {
+  fill: #0067ac;
+}
+
+.flow-chart-group1_shape {
+    fill-opacity: 1;
+  }
+  
+  .flow-chart-group2_shape {
+    fill-opacity: 0.8;
+  }
+  
+  .flow-chart-group3_shape {
+    fill-opacity: 0.6;
+  }
+  
+  .flow-chart-group4_shape {
+    fill-opacity: 0.4;
+  }
+  
+  .flow-chart-group5_shape {
+    fill-opacity: 0.3;
+  }
+  
+  .flow-chart-group6_shape {
+    fill-opacity: 0.2;
+  }
+  
+  .flow-chart-content {
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0; /* Set initial opacity to 0 */
+    transition: opacity 0.5s; /* Add a transition for a smooth effect */
+  }
+  
+  @media screen and (min-width: 550px) {
+    .flow-chart-content {
+      opacity: 1; /* Change opacity to 1 when conditions are met */
+    }
+
+  
+    .flow-chart_description_group1 {
+      order: 2;
+      width: 50%;
+      padding-left: 30%;
+      margin-top: 50px;
+      opacity: 0;
+      animation: textOpacity 1400ms ease-out 2900ms forwards;
+      
+      p {
+        border-bottom: 1px solid #000;
+        padding-bottom: 5px;
+      }
+    }
+  
+    .flow-chart_description_group2 {
+      order: 4;
+      width: 50%;
+      padding-left: 30%;
+      margin-top: -150px;
+      opacity: 0;
+      animation: textOpacity 1400ms ease-out 2900ms forwards;
+      
+      p {
+        border-bottom: 1px solid #000;
+        padding-bottom: 5px;
+      }
+    }
+  
+    .flow-chart_description_group3 {
+      order: 3;
+      width: 50%;
+      padding-right: 30%;
+      text-align: right;
+      margin-top: -150px;
+      opacity: 0;
+      animation: textOpacity 1400ms ease-out 2900ms forwards;
+      
+      p {
+        border-bottom: 1px solid #000;
+        padding-bottom: 5px;
+      }
+    }
+  
+    .flow-chart_description_group4 {
+      order: 1;
+      width: 50%;
+      padding-right: 30%;
+      text-align: right;
+      margin-top: 60px;
+      opacity: 0;
+      animation: textOpacity 1400ms ease-out 2900ms forwards;
+      
+      p {
+        border-bottom: 1px solid #000;
+        padding-bottom: 5px;
+      }
+    }
+  }
+  
