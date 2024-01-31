@@ -5,8 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 <script src="script.js"></script>
-<link rel="stylesheet" href="specific-style.css">
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="specific-style.css">
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+<script src="script-vue-app.js"></script>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="shortcut icon" href="img/nss.png" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
@@ -49,123 +51,133 @@
         </div>
     </div>
 </nav>
-<section class="flow-chart">
-  <div class="flow-chart-content">
-     <!--  Group 1 Input -->
-     <p class="flow-chart_input_group1-row1 flow-chart_input">Creat Invoice</p>
-     <p class="flow-chart_input_group1-row2 flow-chart_input">Package &amp; Verify</p>
-     <p class="flow-chart_input_group1-row3 flow-chart_input">Information with</p>
-     <p class="flow-chart_input_group1-row4 flow-chart_input">On-Site Staff</p>
-     <div class="flow-chart_description_group1 flow-chart_description">
-        <p>Adherence to Retention Schedules</p>
-     </div>
-
-     <!--  Group 2 Input -->
-     <p class="flow-chart_input_group2-row1 flow-chart_input">Collect Fees</p>
-     <p class="flow-chart_input_group2-row2 flow-chart_input">Deliver Content</p>
-     <p class="flow-chart_input_group2-row3 flow-chart_input">Send Fulfillment</p>
-     <p class="flow-chart_input_group2-row4 flow-chart_input">Notifcation</p>
-     <p class="flow-chart_input_group2-row5 flow-chart_input">Authentication</p>
-     <p class="flow-chart_input_group2-row6 flow-chart_input">&amp; Track</p>
-
-
-     <div class="flow-chart_description_group2 flow-chart_description">
-        <p>Improved Customer Service and Communication</p>
-     </div>
-     <!--  Group 3 Input -->
-     <p class="flow-chart_input_group3-row1 flow-chart_input">Coordinate Validation of</p>
-     <p class="flow-chart_input_group3-row2 flow-chart_input">Headquater with Hospitals</p>
-     <p class="flow-chart_input_group3-row3 flow-chart_input"></p>
-     <p class="flow-chart_input_group3-row4 flow-chart_input"></p>
-     <div class="flow-chart_description_group3 flow-chart_description">
-        <p>ON-Site Management in Accordance with Facility’s Processes </p>
-     </div>
-     <!--  Group 4 Input -->
-     <p class="flow-chart_input_group4-row1 flow-chart_input">Capture, Collet</p>
-     <p class="flow-chart_input_group4-row2 flow-chart_input"> &amp; Sort Off-Site</p>
-     <p class="flow-chart_input_group4-row3 flow-chart_input">Paper Charts/</p>
-     <p class="flow-chart_input_group4-row4 flow-chart_input">EMR Content</p>
-     <div class="flow-chart_description_group4 flow-chart_description">
-        <p>Closing the loop on Chain of Custody</p>
-     </div>
-
-     <!--  Group 5 Input -->
-     <p class="flow-chart_input_group5-row1 flow-chart_input">Capture, Collet</p>
-     <p class="flow-chart_input_group5-row2 flow-chart_input">&amp; Sort Off-Site</p>
-     <p class="flow-chart_input_group5-row3 flow-chart_input">Digital images/</p>
-     <p class="flow-chart_input_group5-row4 flow-chart_input">Paper Charts</p>
-  </div>
-  <svg version="1.1" class="flow-chart-svg" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;" xml:space="preserve">
-
-     <circle class="flow-svg-outer-circle" cx="247.5" cy="251.9" r="231.7" />
-     <g class="flow-chart-group1 flow-chart-group">
-        <path class="flow-chart-group1_shape flow-chart-group_shape" d="M250.3,20l18.2,47.5L250.6,117c0,0,87.4-2,124.7,92h50.4l41.2-31.6C466.9,177.4,417.9,22.6,250.3,20z" />
-        <text transform="matrix(1 0 0 1 271.5667 58.0164)">
-           <tspan x="0" y="0" class="flow-chart_text_group1-row1"></tspan>
-           <tspan x="0" y="14.6" class="flow-chart_text_group1-row2"></tspan>
-           <tspan x="0" y="29.2" class="flow-chart_text_group1-row3"></tspan>
-           <tspan x="0" y="43.8" class="flow-chart_text_group1-row4"></tspan>
-        </text>
-     </g>
-     <g>
-        <circle class="flow-svg-inner-circle" cx="247.5" cy="251.9" r="134.8" />
-        <text class="flow-chart-title" transform="matrix(1 0 0 1 188.9527 220.864)">
-           <tspan x="0" y="0" class="flow-chart_text_group2-row1"></tspan>
-           <tspan x="-57" y="33" class="flow-chart_text_group2-row2"></tspan>
-           <tspan x="-21" y="66.1" class="flow-chart_text_group2-row3"></tspan>
-        </text>
-     </g>
-     <g class="flow-chart-group5 flow-chart-group">
-        <path class="flow-chart-group5_shape flow-chart-group_shape" d="M29.3,175.7l51.3-1.3l40.3,31c0,0,32.6-83.8,126.5-88.2l17-49l-17-47.9C247.5,20.2,78.9,22.7,29.3,175.7z" />
-        <g>
-           <text transform="matrix(1 0 0 1 112.702 58.0164)">
-              <tspan x="0" y="0" class="flow-chart_text_group5-row1"></tspan>
-              <tspan x="0" y="14.6" class="flow-chart_text_group5-row2"></tspan>
-              <tspan x="0" y="29.2" class="flow-chart_text_group5-row3"></tspan>
-              <tspan x="0" y="43.8" class="flow-chart_text_group5-row4"></tspan>
-           </text>
+<div class="template-wrap">
+  
+  <div class="ep-flowchart" id="ep-flowchart">
+    <div class="ep-svg-wrap">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
+        <g id="Page-1" fill="none" fill-rule="evenodd">
+          <g id="Course-Template">
+            <g id="arrows" transform="translate(163 98)">
+              <g id="arrows/arrow-1.2" transform="rotate(90 69.5 70)">
+                <g id="arrow-1.2">
+                  <path id="Line" stroke="#89969F" stroke-linecap="square" d="M.336 2.5h38.46"/>
+                  <polygon id="Triangle" fill="#89969F" points="37 5 37 0 40 2.5"/>
+                </g>
+              </g>
+              <g id="arrows/arrow-1.2-copy" transform="rotate(90 27.5 112)">
+                <g id="arrow-1.2">
+                  <path id="Line" stroke="#89969F" stroke-linecap="square" d="M.336 2.5h38.46"/>
+                  <polygon id="Triangle" fill="#89969F" points="37 5 37 0 40 2.5"/>
+                </g>
+              </g>
+              <g id="arrows/arrow-4" transform="rotate(90 53 220.5)">
+                <g id="arrow-4">
+                  <path id="Path-4" stroke="#89969F" d="M87 3H38.009C32.48 3 28 7.48 28 13v247c0 5.523 4.483 10 10.009 10H87"/>
+                  <path id="Path-5" stroke="#89969F" d="M28.5 137H.996"/>
+                  <polygon id="Triangle-2-Copy-2" fill="#89969F" points="87 6 87 0 90 3"/>
+                  <polygon id="Triangle-2-Copy-4" fill="#89969F" points="87 273 87 267 90 270"/>
+                </g>
+              </g>
+              <g id="arrow-2" transform="translate(3 335)">
+                <path id="Path-2" stroke="#89969F" d="M0 0v73.009C0 78.527 4.485 83 9.992 83H70"/>
+                <polygon id="Triangle-2" fill="#89969F" points="70 86 70 80 73 83"/>
+              </g>
+              <g id="arrow-2-copy" transform="matrix(-1 0 0 1 271 335)">
+                <path id="Path-2" stroke="#89969F" d="M0 0v73.009C0 78.527 4.485 83 9.992 83H70"/>
+                <polygon id="Triangle-2" fill="#89969F" points="70 86 70 80 73 83"/>
+              </g>
+            </g>
+            <g id="ep-content" class="ep-svg-block"
+               @click="{{ display = true; selected = 'ep-content' }}"
+               transform="translate(229 56)">
+              <rect id="Rectangle" width="141" height="40" fill="#8BE5AD" rx="20"/>
+              <text id="Content" fill="#586075" font-family="Roboto-Regular, Roboto" font-size="18" letter-spacing="1">
+                <tspan x="27.022" y="25">CONTENT</tspan>
+              </text>
+            </g>
+            <g id="ep-form" class="ep-svg-block"
+               @click="{{ display = true; selected = 'ep-form' }}"
+               transform="translate(244 140)">
+              <rect id="Rectangle" width="112" height="40" fill="#8BE5AD" rx="20"/>
+              <text id="Content" fill="#586075" font-family="Roboto-Regular, Roboto" font-size="18" letter-spacing="1">
+                <tspan x="29.964" y="25">FORM</tspan>
+              </text>
+            </g>
+            <g id="ep-media" class="ep-svg-block"
+               @click="{{ display = true; selected = 'ep-media' }}"
+               transform="translate(239 224)">
+              <rect id="Rectangle" width="122" height="40" fill="#8BE5AD" rx="20"/>
+              <text id="Content" fill="#586075" font-family="Roboto-Regular, Roboto" font-size="18" letter-spacing="1">
+                <tspan x="31.49" y="25">MEDIA</tspan>
+              </text>
+            </g>
+            <g id="ep-unity" class="ep-svg-block"
+               @click="{{ display = true; selected = 'ep-unity' }}"
+               transform="translate(241 496)">
+              <rect id="Rectangle" width="118" height="40" fill="#8BE5AD" rx="20"/>
+              <text id="Content" fill="#586075" font-family="Roboto-Regular, Roboto" font-size="18" letter-spacing="1">
+                <tspan x="31.589" y="25">UNITY</tspan>
+              </text>
+            </g>
+            <g id="ep-elements" class="ep-svg-block"
+               @click="{{ display = true; selected = 'ep-elements' }}"
+               transform="translate(66 357)">
+              <rect id="Rectangle" width="200" height="74" fill="#8BE5AD" rx="37"/>
+              <text id="Elements-of-Design" fill="#586075" font-family="Roboto-Regular, Roboto" font-size="18" letter-spacing="1">
+                <tspan x="36.046" y="33">ELEMENTS OF </tspan> <tspan x="65.559" y="54">DESIGN</tspan>
+              </text>
+            </g>
+            <g id="ep-principles" class="ep-svg-block"
+               @click="{{ display = true; selected = 'ep-principles' }}"
+               transform="translate(335 357)">
+              <rect id="Rectangle" width="200" height="74" fill="#8BE5AD" rx="37"/>
+              <text id="Principles-of-Organi" fill="#586075" font-family="Roboto-Regular, Roboto" font-size="18" letter-spacing="1">
+                <tspan x="30.707" y="33">PRINCIPLES OF </tspan> <tspan x="30.196" y="54">ORGANIZATION</tspan>
+              </text>
+            </g>
+          </g>
         </g>
-     </g>
-     <!--       Group 2 -->
-     <g class="flow-chart-group2 flow-chart-group">
-        <path class="flow-chart-group2_shape flow-chart-group_shape" d="M377,212h50.4l40.6-31.4c0,0,50,151.7-81.8,256.8l-42.7-28.8l-15.1-49.1C328.4,359.5,399.6,310,377,212z" />
-        <text transform="matrix(1 0 0 1 388.6301 235.3528)">
-           <tspan x="0" y="0" class="flow-chart_text_group2-row1"></tspan>
-           <tspan x="0" y="14.6" class="flow-chart_text_group2-row2"></tspan>
-        </text>
-        <text transform="matrix(1 0 0 1 370.6653 279.9765)">
-           <tspan x="0" y="0" class="flow-chart_text_group2-row3"></tspan>
-           <tspan x="0" y="14.6" class="flow-chart_text_group2-row4"></tspan>
-           <tspan x="0" y="29.2" class="flow-chart_text_group2-row5"></tspan>
-           <tspan x="0" y="43.8" class="flow-chart_text_group2-row6"></tspan>
-        </text>
-     </g>
-     <g class="flow-chart-group3 flow-chart-group">
-        <path class="flow-chart-group3_shape flow-chart-group_shape" d="M325.5,361.7l14.7,49.2l42,29.4c0,0-123.6,97.2-269.6,0l14.6-53.7l38.8-24.9
-   C166.1,361.7,248.6,417.4,325.5,361.7z" />
-        <text transform="matrix(1 0 0 1 164.4879 408.3419)">
-           <tspan x="0" y="0" class="flow-chart_text_group3-row1"></tspan>
-           <tspan x="0" y="14.6" class="flow-chart_text_group3-row2"></tspan>
-        </text>
-     </g>
-     <g class="flow-chart-group4 flow-chart-group">
-        <path class="flow-chart-group4_shape flow-chart-group_shape" d="M108.9,437.5l13.3-53.3l42.4-26.2c0,0-65.5-52-44.7-149.4l-40-30.4l-52.4,1.1C27.4,179.4-23.8,337,108.9,437.5
-   z" />
-        <text transform="matrix(1 0 0 1 24.0334 233.6149)">
-           <tspan x="0" y="0" class="flow-chart_text_group4-row1"></tspan>
-           <tspan x="0" y="14.6" class="flow-chart_text_group4-row2"></tspan>
-           <tspan x="0" y="29.2" class="flow-chart_text_group4-row3"></tspan>
-           <tspan x="0" y="43.8" class="flow-chart_text_group4-row4"></tspan>
-        </text>
-     </g>
-  </svg>
-</section>
-
-<div class="loader-wrapper">
-    <div class="spinner-border spinner-border-lg text-light" style="width: 4rem; height: 4rem;" role="status">
-      <span class="sr-only">Loading...</span>
+      </svg>
+      
     </div>
+    <transition name="pop-details">
+    <div class="ep-detail-wrap" v-show="selected != ''"
+         @click="{{selected = ''}}">
+      
+      <div class="ep-detail" v-show="selected == 'ep-content'">
+        <h3>Content</h3>
+        <p>The Message. What we are trying to say.</p>
+      </div>
+      <div class="ep-detail" v-show="selected == 'ep-form'">
+        <h3>Form</h3>
+        <p>How you will express the message.</p>
+      </div>
+      <div class="ep-detail" v-show="selected == 'ep-media'">
+        <h3>Media</h3>
+        <p>The tools and materials you use to convey the message</p>
+      </div>
+      <div class="ep-detail" v-show="selected == 'ep-elements'">
+        <h3>Elements of Design</h3>
+        <p>Line, Shape, Value, Texture, Color, Illusion of Depth, Illusion of Movement</p>
+      </div>
+      <div class="ep-detail" v-show="selected == 'ep-principles'">
+        <h3>Principles of Organization</h3>
+        <p>Balance, Movement, Emphasis/Dpminance/Focal Point, Rhythm (through repetition), Economy, Variety</p>
+      </div>
+      <div class="ep-detail" v-show="selected == 'ep-unity'">
+        <h3>Unity</h3>
+        <p>Both a guiding principle and the end-result of a well-considered design.</p>
+      </div>
+      
+      
+    </div>
+    </transition>
+
   </div>
+  
+</div>
 
 <!-- Remove the container if you want to extend the Footer to full width. -->
 <!-- <div class="container my-5"> -->
