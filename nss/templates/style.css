@@ -145,6 +145,58 @@ cursor: pointer;
   border-radius: 50%;
 }
 
+table {
+  width: 100%;
+  margin-bottom: 1rem;
+  color: #212529;
+}
+
+th, td {
+  padding: 0.75rem;
+  vertical-align: top;
+  border-top: 1px solid #dee2e6;
+}
+
+thead {
+  background-color: #343a40;
+  color: #ffffff;
+}
+
+.photo-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.photo-item {
+  width: calc(25% - 16px);
+  position: relative;
+}
+
+.photo-item img {
+  width: 100%;
+  border: 2px solid #212529; /* Add your desired border style */
+  border-radius: 8px; /* Add border radius for rounded corners */
+}
+
+.card {
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.photo-item {
+  transition: transform 0.2s;
+}
+
+.photo-item:hover {
+  transform: scale(1.05);
+}
+
 @media (max-width: 992px) {
   form {
     display: flex;
@@ -183,8 +235,32 @@ cursor: pointer;
 .card-text{
   font-size: 12px;
 }
+
+table {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  white-space: nowrap;
 }
 
+th, td {
+  display: table-cell;
+  width: auto;
+}
+
+.photo-item {
+  width: calc(50% - 16px);
+}
+
+.col-sm-3 {
+  width: 100%;
+}
+
+.card {
+  margin-bottom: 20px;
+}
+}
 
 @media (min-width: 992px) {
   .custom-navbar {

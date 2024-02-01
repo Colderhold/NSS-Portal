@@ -48,47 +48,23 @@
 <div class='box'>
   <br>
   <div class='container-fluid'>
-    <div class="row row-cols-1 row-cols-md-3 g-4 mt-5">
-      <div class="col">
-        <div class="card h-100 rounded-5" style='background: #f8f9fa;'>
-          <img src="img/01prof.png" class="card-img-top1" alt="...">
-          <div class="card-body">
-            <h5 class="card-title text-center text-uppercase fw-bold fs-3 mb-3">Head 1</h5>
-            <p class="card-text fs-4" style='text-align: justify;'><strong>Year: </strong>Third</p>
-            <p class="card-text fs-4" style='text-align: justify;'><strong>Branch: </strong>Computer Engineering</p>
-            <p class="card-text fs-4" style='text-align: justify;'><strong>Bio: </strong>Example Bio here.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col">
-        <div class="card h-100 rounded-5" style='background: #f8f9fa;'>
-          <img src="img/01prof.png" class="card-img-top1" alt="...">
-          <div class="card-body">
-            <h5 class="card-title text-center text-uppercase fw-bold fs-3 mb-3">Head 2</h5>
-            <p class="card-text fs-4" style='text-align: justify;'><strong>Year: </strong>Third</p>
-            <p class="card-text fs-4" style='text-align: justify;'><strong>Branch: </strong>Computer Engineering</p>
-            <p class="card-text fs-4" style='text-align: justify;'><strong>Bio: </strong>Example Bio here.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col">
-        <div class="card h-100 rounded-5" style='background: #f8f9fa;'>
-          <img src="img/01prof.png" class="card-img-top1" alt="...">
-          <div class="card-body">
-            <h5 class="card-title text-center text-uppercase fw-bold fs-3 mb-3">Head 3</h5>
-            <p class="card-text fs-4" style='text-align: justify;'><strong>Year: </strong>Third</p>
-            <p class="card-text fs-4" style='text-align: justify;'><strong>Branch: </strong>Computer Engineering</p>
-            <p class="card-text fs-4" style='text-align: justify;'><strong>Bio: </strong>Example Bio here.</p>
-          </div>
-        </div>
+    <div class="row mt-5 justify-content-center">
+      <div class="col-12 d-flex justify-content-evenly">
+        <button type="button" class="btn btn-light" onclick="showBatch(1)">Batch 1</button>
+        <button type="button" class="btn btn-light" onclick="showBatch(2)">Batch 2</button>
+        <button type="button" class="btn btn-light" onclick="showBatch(3)">Batch 3</button>
+        <!-- Add more buttons for additional batches if needed -->
       </div>
     </div>
+
+    <div id="headInfo" class="row row-cols-1 row-cols-md-3 g-4 mt-3">
+      <!-- The content for each batch will be dynamically inserted here -->
+    </div>
+  </div>
+
+  <br> <br>
 </div>
 
-<br>  <br>
-</div>
 
 <div class="loader-wrapper">
   <div class="spinner-border spinner-border-lg text-light" style="width: 4rem; height: 4rem;" role="status">
@@ -225,6 +201,67 @@
   });
 
 </script>
+
+<!-- ... Your existing HTML code ... -->
+
+<script>
+  // Sample data for heads organized into batches
+  var headData = [
+    { batch: 1, name: 'Head 1', year: 'Third', branch: 'Computer Engineering', bio: 'Example Bio 1' },
+    { batch: 1, name: 'Head 2', year: 'Third', branch: 'Computer Engineering', bio: 'Example Bio 2' },
+    { batch: 1, name: 'Head 3', year: 'Third', branch: 'Computer Engineering', bio: 'Example Bio 3' },
+    { batch: 2, name: 'Head 4', year: 'Third', branch: 'Computer Engineering', bio: 'Example Bio 4' },
+    { batch: 2, name: 'Head 5', year: 'Third', branch: 'Computer Engineering', bio: 'Example Bio 5' },
+    { batch: 2, name: 'Head 6', year: 'Third', branch: 'Computer Engineering', bio: 'Example Bio 6' },
+    { batch: 3, name: 'Head 7', year: 'Third', branch: 'Computer Engineering', bio: 'Example Bio 7' },
+    { batch: 3, name: 'Head 8', year: 'Third', branch: 'Computer Engineering', bio: 'Example Bio 8' },
+    { batch: 3, name: 'Head 9', year: 'Third', branch: 'Computer Engineering', bio: 'Example Bio 9' },
+    // Add more head data for additional batches if needed
+  ];
+
+  function showBatch(batchNumber) {
+    // Get the container where head information will be displayed
+    var headContainer = document.getElementById('headInfo');
+
+    // Clear existing content
+    headContainer.innerHTML = '';
+
+    // Filter heads based on the selected batch
+    var batchHeads = headData.filter(function (head) {
+      return head.batch === batchNumber;
+    });
+
+    // Dynamically create HTML content for each head in the batch
+    batchHeads.forEach(function (head) {
+      var headContent = `
+        <div class="col">
+          <div class="card h-100 rounded-5" style='background: #f8f9fa;'>
+            <img src="img/01prof.png" class="card-img-top1" alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-center text-uppercase fw-bold fs-3 mb-3">${head.name}</h5>
+              <p class="card-text fs-4" style='text-align: justify;'><strong>Year: </strong>${head.year}</p>
+              <p class="card-text fs-4" style='text-align: justify;'><strong>Branch: </strong>${head.branch}</p>
+              <p class="card-text fs-4" style='text-align: justify;'><strong>Bio: </strong>${head.bio}</p>
+            </div>
+          </div>
+        </div>
+      `;
+
+      // Insert the dynamically created content into the container
+      headContainer.innerHTML += headContent;
+    });
+  }
+
+  // Show Batch 1 details by default when the page loads
+  document.addEventListener('DOMContentLoaded', function () {
+    showBatch(1);
+  });
+</script>
+
+<!-- ... Your existing JavaScript code ... -->
+
+<!-- ... Your existing HTML code ... -->
+
     
 </body>
 </html>
