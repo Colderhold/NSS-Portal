@@ -1,1 +1,0 @@
-NSS Portal for SIESGST College.
