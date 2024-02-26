@@ -6,13 +6,12 @@
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="shortcut icon" href="img/nss.png" />
-<script src="script.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
-<body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
+<body>
   <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" data-bs-theme="dark">
     <div class="container-fluid">
       <img src='img/nss.png' class='image'>
@@ -52,17 +51,17 @@
     <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
       <div id='carouselInner' class="carousel-inner">
         <div class="carousel-item active c-item" data-bs-interval="4000">
-          <img src="img/nss6.jpg" class="d-block w-100 c-img" alt="...">
+          <img id='image1' src="img/picture30.png" class="d-block w-100 c1-img" alt="...">
         </div>
         <div class="carousel-item c-item" data-bs-interval="4000">
-          <img src="img/nss1.jpg" class="d-block w-100 c-img" alt="...">
+          <img id='image2' src="img/picture31.png" class="d-block w-100 c1-img" alt="...">
         </div>
         <div class="carousel-item c-item" data-bs-interval="4000">
-          <img src="img/nss7.jpeg" class="d-block w-100 c-img" alt="...">
+          <img id='image3' src="img/picture32.png" class="d-block w-100 c1-img" alt="...">
 
           <div class="text-center position-absolute bottom-0 w-100 mb-5">
-            <a href="gallery.html" class="btn btn-outline-light">View More Photos</a>
-          </div>
+            <a href="#" class="btn btn-outline-light" onclick="redirectToGallery(); return false;">View More Photos</a>
+        </div>
         </div>
 
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
@@ -82,18 +81,19 @@
         <div class="card text-light bg-dark mb-3 rounded-5" style="pointer-events: none;">
           <div class="row g-0">
             <div class="col-md-4">
-              <img src="img/nss3.jpg" class="card-img rounded-5 img-thumbnail border border-5 border-light" alt="...">
+              <img id='image4' src="img/nss3.jpeg" class="card-img rounded-5 img-thumbnail border border-4 border-light" alt="...">
             </div>
             <div class="col-md-8">
               <div class="card-body">
-                <h1 id="activityName" class="card-title text-uppercase fw-bold mt-3 mb-4" >Activity Name</h1>
-                <p id="activityDescription"  class="card-text lh-lg" style='text-align: justify;'>The NSS Camp is an annually organized event by SIES Graduate School of Technology (SIES GST) that encapsulates the spirit of social responsibility and community engagement. This enriching camp serves as a platform for students to contribute meaningfully to society through a range of community service activities. It's a week-long experience that goes beyond regular studies, making students feel like a team and teaching them to care for others. During the camp, students do different activities like donating blood, planting trees, and cleaning up areas. These activities not only help the community but also teach about taking care of the.</p>
+                <h1 id="activityName" class="card-title text-uppercase text-center fw-bold mt-3 mb-4" ></h1>
+                <p id="activityDescription"  class="card-text fw-medium lh-lg" style='text-align: justify;'></p>
               </div>
             </div>
           </div>
         </div>
       </div>
     
+      <div class="container mx-auto">
       <h1 class='mt-4 mb-4' style='font-weight: 700; text-align: center;'> STATISTICS </h1>
 
       <div class="table-responsive">
@@ -102,36 +102,20 @@
           <tr>
             <th scope="col">Sr.No</th>
             <th scope="col">Date</th>
-            <th scope="col">Number of Male Volunteers</th>
-            <th scope="col">Number of Female Volunteers</th>
-            <th scope="col">Total</th>
+            <th scope="col">Number of Volunteers</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <th scope="row">1</th>
-            <td id="date">24/02/23</td>
-            <td id="maleVolunteers">100</td>
-            <td id="femaleVolunteers">50</td>
-            <td id="totalVolunteers">150</td>
+            <th id="row"></th>
+            <td id="date"></td>
+            <td id="volunteer"></td>
           </tr>
           <tr>
-            <th scope="row">2</th>
-            <td id="date">23/02/22</td>
-            <td id="maleVolunteers">100</td>
-            <td id="femaleVolunteers">50</td>
-            <td id="totalVolunteers">150</td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td id="date">22/02/21</td>
-            <td id="maleVolunteers">100</td>
-            <td id="femaleVolunteers">50</td>
-            <td id="totalVolunteers">150</td>
-          </tr>
         </tbody>
       </table>
     </div>
+  </div>
 </div>
 </div>
 </div>
@@ -251,9 +235,177 @@
         document.querySelector('.loader-wrapper').style.display = 'none';
         document.querySelector('.navbar').classList.remove('d-none');
       }, 700);
+
+      const urlParams = new URLSearchParams(window.location.search);
+      const activityName = urlParams.get('activity');
+      const activityDetails = activities[activityName.trim()];
+
+      if (activityDetails) {
+        updateActivityContent(activityDetails);
+        updateGallery(activityName);
+      } else {
+        console.error('Activity not found.');
+      }
     });
 
-  </script>
-    
+    // Update the gallery when "View More Photos" is clicked
+    function updateGalleryFromLink(activityName) {
+      updateGallery(activityName);
+    }
+  
+    document.addEventListener('DOMContentLoaded', function () {
+      const urlParams = new URLSearchParams(window.location.search);
+      const activityName = urlParams.get('activity');
+      updateGallery(activityName);
+    });
+
+    const activities = {
+      "activity 1": {
+        "name": "Independence Day Celebration",
+        "description": "NSS unit of SIESGST joyfully commemorates Independence Day, honoring the historic day when India gained freedom from colonial rule and embarked on a journey of self-governance. Our celebrations resonate with the spirit of patriotism and dedication to the nation.<br><strong>➤ Flag Hoisting Ceremony:</strong> Participate in or organize a flag hoisting ceremony, symbolizing the pride and sovereignty of our nation. <br><strong>➤ Cultural Extravaganza:</strong> Engage in or support a variety of cultural performances, including dance, music, and drama, showcasing the diverse cultural tapestry of India. <br><strong>➤ Patriotic Expressions:</strong> Create and exhibit patriotic slogans and posters, fostering awareness about the historical significance of Independence Day and nurturing a sense of national pride.",
+        "row": "1",
+        "date": "21-03-2021",
+        "volunteer": "100",
+        "images": [
+         "img/picture49.png",
+         "img/picture53.png",
+         "img/picture51.png",
+         "img/nss3.jpeg"
+        ]
+      },
+      "activity 2": {
+        "name": "Republic Day Celebration",
+        "description": "NSS unit of SIESGST proudly celebrates Republic Day, honouring India's democratic spirit and rich cultural heritage through meaningful activities and vibrant participation.<br><strong>➤ Flag Hoisting Ceremony:</strong> Attending or organising a flag hoisting ceremony, marking the official start of the celebrations with respect and patriotism. <br><strong>➤ Cultural Performances:</strong> Presenting or supporting diverse cultural performances like dance, music, and drama, showcasing India's vibrant unity in diversity. <br><strong>➤ Patriotic Slogans & Posters:</strong> Creating and displaying patriotic slogans and posters to raise awareness about the significance of the day and ignite national pride. ",
+        "row": "1",
+        "date": "21-03-2021",
+        "volunteer": "100",
+        "images": [
+        "img/picture50.png",
+        "img/picture52.png",
+        "img/picture54.png",
+        "img/nss12.jpeg"
+        ]
+      },
+      "activity 3": {
+        "name": "Internationl Yoga Day",
+        "description": "SIESGST College joyously commemorates International Yoga Day, embracing the holistic essence of yoga for physical, mental, and spiritual well-being. Join us in a harmonious celebration that promotes balance and inner peace through engaging activities.<br><strong>➤ Yoga Sessions:</strong> Immerse yourself in rejuvenating yoga sessions led by experienced instructors, exploring various asanas and techniques to enhance flexibility, strength, and mindfulness. <br><strong>➤ Breathing Exercises:</strong> Delve into the art of conscious breathing with dedicated breathing exercises, fostering a connection between the mind and body, promoting relaxation and stress relief. <br><strong>➤ Meditation Workshops:</strong> Experience the transformative power of meditation in specialized workshops, guiding participants towards a state of calmness and self-awareness. <br><strong>➤ Yoga for Wellness Talks:</strong> Engage in enlightening discussions on the holistic benefits of yoga for overall well-being, including physical health, mental clarity, and emotional balance. ",
+        "row": "1",
+        "date": "21-03-2021",
+        "volunteer": "100",
+        "images": [
+        "img/picture62.png",
+        "img/picture63.png",
+        "img/picture64.png",
+        "img/nss5.jpeg"
+        ]
+      },
+      "activity 4": {
+        "name": "Mahatma Gandhi and Lal Bahadur Shastri Jayanti",
+        "description": "Join the NSS unit of SIESGST in commemorating the birth anniversaries of two stalwarts, Mahatma Gandhi and Lal Bahadur Shastri. Let's pay homage to their indomitable spirit and unwavering commitment to the principles of truth, non-violence, and service to the nation.<br><strong>➤ Inspirational Talks:</strong> Engage in enlightening discussions on the life and teachings of Mahatma Gandhi and Lal Bahadur Shastri, drawing inspiration from their leadership and vision for a harmonious society. <br><strong>➤ Tribute Ceremonies:</strong> Participate in solemn tribute ceremonies to honor the legacies of these great leaders, reflecting on their contributions to India's freedom struggle and nation-building. <br><strong>➤ Peace March:</strong> Embark on a symbolic peace march, embodying the principles of Gandhian philosophy, spreading the message of peace, unity, and communal harmony.",
+        "row": "1",
+        "date": "02-10-2021",
+        "volunteer": "150",
+        "images": [
+          "img/picture67.png",
+          "img/picture68.png",
+          "img/picture69.png",
+          "img/nss15.jpeg"
+        ]
+      },
+      
+      "activity 5": {
+        "name": "Mangrove Clean Drive",
+        "description": "Join hands with the NSS unit of SIESGST in a noble initiative to preserve and protect our coastal ecosystem. The Mangrove Clean Drive aims to contribute to environmental conservation by cleaning and maintaining the mangrove areas, crucial for biodiversity and ecological balance.<br><strong>➤ Mangrove Cleanup:</strong> Participate in hands-on cleanup activities to remove litter and debris from mangrove areas, promoting a cleaner and healthier environment. <br><strong>➤ Environmental Awareness:</strong> Engage in awareness campaigns about the importance of mangroves in supporting marine life, preventing soil erosion, and mitigating climate change. <br><strong>➤ Plantation Drive:</strong> Contribute to the reforestation efforts by planting mangrove saplings, fostering a sustainable and resilient coastal ecosystem.",
+        "row": "1",
+        "date": "15-06-2022",
+        "volunteer": "120",
+        "images": [
+          "img/picture24.jpg",
+          "img/picture23.jpg",
+          "img/picture22.jpg",
+          "img/nss16.jpeg"
+        ]
+      },
+      
+      "activity 6": {
+        "name": "Street Play",
+        "description": "Experience the power of storytelling and social messaging through the art of street play. The NSS unit of SIESGST invites you to witness and participate in vibrant street performances addressing relevant social issues, inspiring change, and fostering awareness in an entertaining way.<br><strong>➤ Creative Performances:</strong> Enjoy dynamic and thought-provoking street plays performed by talented volunteers, focusing on issues like environmental conservation, social justice, and community harmony. <br><strong>➤ Audience Interaction:</strong> Engage with the performers in interactive sessions, discussing the themes and encouraging dialogue on the presented social issues. <br><strong>➤ Expressive Art:</strong> Showcase your creativity by participating in the production or direction of street plays, using drama as a medium for social impact.",
+        "row": "1",
+        "date": "18-04-2022",
+        "volunteer": "80",
+        "images": [
+          "img/picture40.png",
+          "img/picture41.png",
+          "img/picture42.png",
+          "img/nss10.jpg"
+        ]
+      },
+      
+      "activity 7": {
+        "name": "Orphanage Visit",
+        "description": "Spread smiles and joy by joining the NSS unit of SIESGST in a heartwarming visit to an orphanage. This activity is an opportunity to connect with and bring happiness to children in need, creating memorable moments and fostering a sense of compassion and social responsibility.<br><strong>➤ Fun and Games:</strong> Engage in playful activities, games, and interactive sessions with the children, creating a positive and uplifting environment. <br><strong>➤ Gift Distribution:</strong> Contribute to the happiness of the children by distributing gifts, school supplies, and essentials, making a meaningful impact on their lives. <br><strong>➤ Cultural Performances:</strong> Share moments of joy through cultural performances, bringing smiles and laughter to the faces of the children.",
+        "row": "1",
+        "date": "12-11-2022",
+        "volunteer": "90",
+        "images": [
+          "img/picture70.png",
+          "img/picture71.png",
+          "img/picture46.png",
+          "img/nss14.jpeg"
+        ]
+      },
+      
+      "activity 8": {
+        "name": "Beach Clean Drive",
+        "description": "Be a steward of environmental conservation by participating in the Beach Clean Drive organized by the NSS unit of SIESGST. Contribute to the cleanliness and beauty of our coastal areas while raising awareness about the importance of keeping our beaches free from pollution.<br><strong>➤ Beach Cleanup:</strong> Roll up your sleeves and engage in hands-on cleanup activities, removing litter and plastic waste from the beach, ensuring a cleaner and safer environment. <br><strong>➤ Eco-friendly Practices:</strong> Promote eco-friendly practices and responsible waste disposal through educational campaigns and demonstrations during the event. <br><strong>➤ Community Involvement:</strong> Encourage community participation in maintaining the pristine beauty of our beaches for the benefit of present and future generations.",
+        "row": "1",
+        "date": "20-08-2023",
+        "volunteer": "130",
+        "images": [
+          "img/picture58.png",
+          "img/picture60.png",
+          "img/picture61.png",
+          "img/nss13.jpeg"
+        ]
+      }
+    };
+
+    function redirectToGallery() {
+      const urlParams = new URLSearchParams(window.location.search);
+      const activityName = urlParams.get('activity');
+  
+      // Check if activityName is available and not null
+      if (activityName) {
+        window.location.href = `gallery.html?activity=${encodeURIComponent(activityName)}`;
+      } else {
+        console.error('Activity name not found.');
+      }
+    }
+
+    const urlParams = new URLSearchParams(window.location.search);
+    const activityName = urlParams.get('activity');
+    const activityDetails = activities[activityName.trim()];
+  
+    function updateActivityContent(activity) {
+      // Check if the activityDetails is defined
+      if (activity) {
+        document.getElementById('activityName').textContent = activity.name;
+        document.getElementById('activityDescription').innerHTML = activity.description;
+        document.getElementById('row').textContent = activity.row;
+        document.getElementById('date').textContent = activity.date;
+        document.getElementById('volunteer').textContent = activity.volunteer;
+
+        for (let i = 1; i <= 4; i++) {
+          const imageId = 'image' + i;
+          const imageUrl = activity.images[i - 1]; // Assuming 'images' is an array in your activity details
+          document.getElementById(imageId).src = imageUrl;
+        }
+      } else {
+        console.error('Activity not found.');
+      }
+    }
+
+    updateActivityContent(activityDetails);
+</script>
 </body>
 </html>
