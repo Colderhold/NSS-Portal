@@ -9,6 +9,18 @@
   } else {
     console.error('Activity not found.');
   }
+
+  const clickableCards = document.querySelectorAll('.clickable-card');
+
+    clickableCards.forEach(function (card) {
+      card.addEventListener('click', function () {
+        const activityNumber = card.getAttribute('data-activity-number');
+        if (activityNumber) {
+          const url = `activity.html?activity=activity%20${encodeURIComponent(activityNumber)}`;
+          window.location.href = url;
+        }
+      });
+    });
 });
 
 // Update the gallery when "View More Photos" is clicked
