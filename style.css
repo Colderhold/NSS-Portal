@@ -191,6 +191,7 @@ thead {
 
 .card:hover {
   transform: scale(1.05);
+  cursor: pointer;
 }
 
 .photo-item {
@@ -275,7 +276,8 @@ thead {
 }
 
 .card-text{
-  font-size: 12px;
+  font-size: 15px;
+  text-align: justify;
 }
 
 table {
@@ -335,7 +337,7 @@ th, td {
 
 .blockquote.text{
         font-size: 10px; 
-        line-height: 1.5; 
+        line-height: 2; 
     }
 
 .img-fluid{
@@ -393,6 +395,11 @@ th, td {
     justify-content: space-between;
     flex-wrap: wrap;
   }
+
+  .card-text{
+    text-align: justify;
+    font-weight: 500;
+  }
 }
 
 .container1 {
@@ -422,7 +429,6 @@ th, td {
   box-shadow: -20px -20px 30px rgba(0, 0, 0, 0.1), 20px 20px 30px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
   border: 3px solid #777696;
-  
 }
 .timeline ul li:last-child {
   margin-bottom: 0;
@@ -451,6 +457,7 @@ th, td {
   margin-bottom: 10px;
   letter-spacing: 2px;
 }
+
 @media only screen and (min-width: 768px) {
   .timeline:before {
     content: "";
@@ -458,7 +465,7 @@ th, td {
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: 2px;
+    width: 4px;
     height: 100%;
     background-color: #000000;
   }
@@ -506,11 +513,52 @@ th, td {
   }
 }
 
+@media only screen and (max-width: 767px) {
+  .timeline:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 4px;
+    height: 100%;
+    background-color: #000000;
+  }
+
+  .timeline ul {
+    list-style: none;
+    padding-left: 0px;
+    position: relative; /* Ensure z-index works */
+    z-index: 1; /* Set a higher z-index for the timeline container */
+  }
+
+  .timeline ul li {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .timeline ul li:nth-child(odd),
+  .timeline ul li:nth-child(even) {
+    margin-top: 20px;
+    float: none;
+    clear: both;
+    transform: none;
+    border-radius: 20px 20px 20px 20px;
+  }
+
+  .timeline ul li:nth-child(odd)::before,
+  .timeline ul li:nth-child(even)::before {
+    transform: translateX(0%, -50%);
+    right: 50%;
+    left: auto;
+  }
+}
 
 .faq{
   padding: 10px 12%;
   text-align: center;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .faq h2{
@@ -520,6 +568,7 @@ th, td {
 
 .accordion{
   margin: 60px auto;
+  padding: 0px 0px;
   width: 100%;
   max-width: 95%;
 }
@@ -549,13 +598,14 @@ label::after{
   right: 20px;
   transition: transform 0.5s;
 }
+
 input[type="radio"]{
   display: none;
 }
 
 .accordion .content{
   background: #b39eb5;
-  text-align: left;
+  text-align: justify;
   padding: 0 20px;
   max-height: 0;
   font-weight: 500;
@@ -579,4 +629,17 @@ input[type="radio"]{
 
 .faq small{
   font-size: 13px;
+}
+
+@media only screen and (max-width: 767px) {
+  .faq{
+    padding: 0px 0px;
+    text-align: center;
+    font-size: 15px;
+  }
+  .center-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 }

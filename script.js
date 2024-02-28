@@ -50,7 +50,7 @@ const activities = {
     ]
   },
   "activity 3": {
-    "name": "Internationl Yoga Day",
+    "name": "International Yoga Day",
     "description": "SIESGST College joyously commemorates International Yoga Day, embracing the holistic essence of yoga for physical, mental, and spiritual well-being. Join us in a harmonious celebration that promotes balance and inner peace through engaging activities.<br><strong>➤ Yoga Sessions:</strong> Immerse yourself in rejuvenating yoga sessions led by experienced instructors, exploring various asanas and techniques to enhance flexibility, strength, and mindfulness. <br><strong>➤ Breathing Exercises:</strong> Delve into the art of conscious breathing with dedicated breathing exercises, fostering a connection between the mind and body, promoting relaxation and stress relief. <br><strong>➤ Meditation Workshops:</strong> Experience the transformative power of meditation in specialized workshops, guiding participants towards a state of calmness and self-awareness. <br><strong>➤ Yoga for Wellness Talks:</strong> Engage in enlightening discussions on the holistic benefits of yoga for overall well-being, including physical health, mental clarity, and emotional balance. ",
     "row": "1",
     "date": "21-03-2021",
@@ -130,6 +130,34 @@ const activities = {
       "img/picture61.jpg",
       "img/nss13.jpeg"
     ]
+  },
+
+  "activity 9": {
+    "name": "Dream Run",
+    "description": "Join us for the exhilarating Dream Run, a marathon event organized by the NSS unit of SIESGST. Lace up your running shoes and be part of a vibrant community promoting fitness, well-being, and community spirit.<br><strong>➤ Marathon Route:</strong> Navigate through scenic routes, experiencing the thrill of the run amidst enthusiastic participants and cheering spectators. <br><strong>➤ Community Bonding:</strong> Foster a sense of unity and camaraderie as you run alongside fellow participants, making the Dream Run a celebration of health and togetherness. <br><strong>➤ Health Awareness:</strong> Contribute to health awareness campaigns during the event, promoting the importance of regular exercise and a healthy lifestyle. <br><strong>➤ Fun-filled Activities:</strong> Enjoy post-run festivities, including music, food, and interactive activities, making the Dream Run a memorable experience for all.",
+    "row": "1",
+    "date": "15-04-2023",
+    "volunteer": "200",
+    "images": [
+      "img/picture11.jpg",
+      "img/picture12.jpg",
+      "img/picture14.jpg",
+      "img/nss8.jpeg"
+    ]
+  },
+  
+  "activity 10": {
+    "name": "Blood Donation Camp",
+    "description": "Be a lifesaver by participating in the Blood Donation Camp organized by the NSS unit of SIESGST. Contribute to the noble cause of saving lives through voluntary blood donations, ensuring a stable and sufficient blood supply for those in need.<br><strong>➤ Voluntary Blood Donation:</strong> Step forward to donate blood voluntarily, contributing to the blood bank and supporting patients in medical emergencies. <br><strong>➤ Medical Check-up:</strong> Receive a thorough medical check-up before donation to ensure your eligibility and well-being throughout the process. <br><strong>➤ Awareness Programs:</strong> Engage in awareness programs highlighting the importance of blood donation, dispelling myths, and encouraging more individuals to participate. <br><strong>➤ Community Support:</strong> Strengthen community bonds through collective participation in this life-saving event, showcasing the spirit of compassion and solidarity.",
+    "row": "1",
+    "date": "05-09-2023",
+    "volunteer": "150",
+    "images": [
+      "img/picture1 (12).jpg",
+      "img/picture1 (6).jpg",
+      "img/picture9.jpg",
+      "img/nss9.jpeg"
+    ]
   }
 };
 
@@ -144,6 +172,7 @@ const galleryImages = {
     "img/picture33.jpg",
     "img/picture34.jpg"
   ],
+
   "activity 2": [
     "img/picture49.jpg",
     "img/picture50.jpg",
@@ -154,17 +183,20 @@ const galleryImages = {
     "img/picture55.jpg",
     "img/picture56.jpg"
   ],
+
   "activity 3": [
     "img/picture62.jpg",
     "img/picture63.jpg",
     "img/picture64.jpg",
     "img/picture65.jpg"
   ],
+
   "activity 4": [
     "img/picture67.jpg",
     "img/picture68.jpg",
     "img/picture69.jpg"
   ],
+
   "activity 5": [
     "img/picture20.jpg",
     "img/picture21.jpg",
@@ -173,6 +205,7 @@ const galleryImages = {
     "img/picture24.jpg",
     "img/picture25.jpg"
   ],
+
   "activity 6": [
     "img/picture37.jpg",
     "img/picture38.jpg",
@@ -181,17 +214,47 @@ const galleryImages = {
     "img/picture41.jpg",
     "img/picture42.jpg"
   ],
+
   "activity 7": [
     "img/picture70.jpg",
     "img/picture71.jpg",
     "img/picture46.jpg"
   ],
+
   "activity 8": [
     "img/picture57.jpg",
     "img/picture58.jpg",
     "img/picture59.jpg",
     "img/picture60.jpg",
     "img/picture61.jpg"
+  ],
+
+  "activity 9": [
+    "img/picture11.jpg",
+    "img/picture1 (1).jpg",
+    "img/picture1 (3).jpg",
+    "img/picture1 (5).jpg",
+    "img/picture1 (7).jpg",
+    "img/picture1 (9).jpg",
+    "img/picture1 (11).jpg",
+    "img/picture1 (15).jpg",
+    "img/picture10 (1).jpg",
+    "img/picture11 (1).jpg",
+    "img/picture12.jpg",
+    "img/picture14.jpg"
+  ],
+
+  "activity 10": [
+    "img/picture1 (4).jpg",
+    "img/picture1 (6).jpg",
+    "img/picture1 (8).jpg",
+    "img/picture1 (10).jpg",
+    "img/picture1 (12).jpg",
+    "img/picture1 (14).jpg",
+    "img/picture1 (16).jpg",
+    "img/picture1 (17).jpg",
+    "img/picture9.jpg",
+    "img/picture10.jpg"
   ],
 };
 

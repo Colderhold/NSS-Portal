@@ -50,7 +50,7 @@
   <div class="container-fluid">
     <div class="row mt-5 mb-4">
         <div class="col-sm-3 mb-3 mb-sm-0">
-          <div class="card rounded-5" style='background: #f8f9fa;'>
+          <div class="card rounded-5 clickable-card" data-activity-number="1" style='background: #f8f9fa;'>
             <img src="img/nss3.jpeg" class="card-img-top rounded-5 img-thumbnail border border-5 border-dark" alt="...">
             <div class="card-body">
               <h5 class="card-title fs-4 fw-bolder text-center">Independence Day Celebration</h5>
@@ -60,7 +60,7 @@
         </div>
     
       <div class="col-sm-3 mb-3">
-        <div class="card rounded-5" style='background: #f8f9fa;'>
+        <div class="card rounded-5 clickable-card" data-activity-number="2" style='background: #f8f9fa;'>
           <img src="img/nss12.jpeg" class="card-img-top rounded-5 img-thumbnail border border-5 border-dark" alt="...">
           <div class="card-body">
             <h5 class="card-title fs-4 fw-bolder text-center">Republic Day Celebration</h5>
@@ -70,7 +70,7 @@
       </div>
     
       <div class="col-sm-3 mb-3">
-        <div class="card rounded-5" style='background: #f8f9fa;'>
+        <div class="card rounded-5 clickable-card" data-activity-number="3" style='background: #f8f9fa;'>
           <img src="img/nss5.jpeg" class="card-img-top rounded-5 img-thumbnail border border-5 border-dark" alt="...">
           <div class="card-body">
             <h5 class="card-title fs-4 fw-bolder text-center">International Yoga Day</h5>
@@ -80,7 +80,7 @@
       </div>
     
       <div class="col-sm-3 mb-3">
-        <div class="card rounded-5" style='background: #f8f9fa;'>
+        <div class="card rounded-5 clickable-card" data-activity-number="4" style='background: #f8f9fa;'>
           <img src="img/nss15.jpeg" class="card-img-top rounded-5 img-thumbnail border border-5 border-dark" alt="...">
           <div class="card-body">
             <h5 class="card-title fs-4 fw-bolder text-center">Mahatma Gandhi and Laal Bahadur Shastri Jayanti</h5>
@@ -92,7 +92,7 @@
     
     <div class="row mt-5 mb-4">
       <div class="col-sm-3 mb-3 mb-sm-0">
-        <div class="card rounded-5" style='background: #f8f9fa;'>
+        <div class="card rounded-5 clickable-card" data-activity-number="5" style='background: #f8f9fa;'>
           <img src="img/nss16.jpeg" class="card-img-top rounded-5 img-thumbnail border border-5 border-dark" alt="...">
           <div class="card-body">
             <h5 class="card-title fs-4 fw-bolder text-center">Mangrove Clean Drive</h5>
@@ -102,7 +102,7 @@
       </div>
     
     <div class="col-sm-3 mb-3">
-      <div class="card rounded-5" style='background: #f8f9fa;'>
+      <div class="card rounded-5 clickable-card" data-activity-number="6" style='background: #f8f9fa;'>
         <img src="img/nss10.jpg" class="card-img-top rounded-5 img-thumbnail border border-5 border-dark" alt="...">
         <div class="card-body">
           <h5 class="card-title fs-4 fw-bolder text-center">Street Play</h5>
@@ -112,7 +112,7 @@
     </div>
     
     <div class="col-sm-3 mb-3">
-      <div class="card rounded-5" style='background: #f8f9fa;'>
+      <div class="card rounded-5 clickable-card" data-activity-number="7" style='background: #f8f9fa;'>
         <img src="img/nss14.jpeg" class="card-img-top rounded-5 img-thumbnail border border-5 border-dark" alt="...">
         <div class="card-body">
           <h5 class="card-title fs-4 fw-bolder text-center">Orphanage Visit</h5>
@@ -122,7 +122,7 @@
     </div>
     
     <div class="col-sm-3 mb-3">
-      <div class="card rounded-5" style='background: #f8f9fa;'>
+      <div class="card rounded-5 clickable-card" data-activity-number="8" style='background: #f8f9fa;'>
         <img src="img/nss13.jpeg" class="card-img-top rounded-5 img-thumbnail border border-5 border-dark" alt="...">
         <div class="card-body">
           <h5 class="card-title fs-4 fw-bolder text-center">Beach Clean Drive</h5>
@@ -250,6 +250,18 @@
         document.querySelector('.loader-wrapper').style.display = 'none';
         document.querySelector('.navbar').classList.remove('d-none');
       }, 700);
+
+      const clickableCards = document.querySelectorAll('.clickable-card');
+
+    clickableCards.forEach(function (card) {
+      card.addEventListener('click', function () {
+        const activityNumber = card.getAttribute('data-activity-number');
+        if (activityNumber) {
+          const url = `activity.html?activity=activity%20${encodeURIComponent(activityNumber)}`;
+          window.location.href = url;
+        }
+      });
+    });
     });
 
   </script>

@@ -9,6 +9,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+<script src="functions.js"></script>
 <body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
@@ -45,10 +46,137 @@
     </div>
 </nav>
 
-<div class='box'>
-<div class="container box2 mt-5">
+<div class='box mt-5'>
+  <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+    <div id='carouselInner' class="carousel-inner">
 
-</div>
+      <div class="carousel-item active c-item" data-bs-interval="3000">
+        <img id='image1' src="img/picture11.jpg" class="d-block w-100 c1-img" alt="...">
+      </div>
+      <div class="carousel-item c-item" data-bs-interval="3000">
+        <img id='image2' src="img/picture1 (4).jpg" class="d-block w-100 c1-img" alt="...">
+      </div>
+      <div class="carousel-item c-item" data-bs-interval="3000">
+        <img id='image3' src="img/picture1 (5).jpg" class="d-block w-100 c1-img" alt="...">
+      </div>
+      <div class="carousel-item c-item" data-bs-interval="3000">
+        <img id='image1' src="img/picture1 (6).jpg" class="d-block w-100 c1-img" alt="...">
+      </div>
+      <div class="carousel-item c-item" data-bs-interval="3000">
+        <img id='image2' src="img/picture1 (11).jpg" class="d-block w-100 c1-img" alt="...">
+      </div>
+      <div class="carousel-item c-item" data-bs-interval="3000">
+        <img id='image3' src="img/picture1 (10).jpg" class="d-block w-100 c1-img" alt="...">
+      </div>
+      <div class="carousel-item c-item" data-bs-interval="3000">
+        <img id='image3' src="img/picture1 (3).jpg" class="d-block w-100 c1-img" alt="...">
+      </div>
+      <div class="carousel-item c-item" data-bs-interval="3000">
+        <img id='image3' src="img/picture1 (8).jpg" class="d-block w-100 c1-img" alt="...">
+      </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <div class="container-fluid">
+    <div class="row mt-5 mb-4">
+        <div class="col-md-6">
+          <div class="card rounded-5 clickable-card" data-activity-number="9"style='background: #f8f9fa;'>
+            <img src="img/nss8.jpeg" class="card-img-top rounded-5 img-thumbnail border border-5 border-dark" alt="...">
+            <div class="card-body">
+              <h5 class="card-title fs-4 fw-bolder text-center">Dream Run</h5>
+              <p class="card-text">Join us for the exhilarating Dream Run, a marathon event organized by the NSS unit of SIESGST. Lace up your <a href='activity.html?activity=activity%209' onclick="updateActivityContent(activities['activity 9']); return false;"> <i class="bi bi-three-dots"></i> </a></p>
+            </div>
+          </div>
+        </div>
+    
+      <div class="col">
+        <div class="card rounded-5 clickable-card" data-activity-number="10" style='background: #f8f9fa;'>
+          <img src="img/nss9.jpeg" class="card-img-top rounded-5 img-thumbnail border border-5 border-dark" alt="...">
+          <div class="card-body">
+            <h5 class="card-title fs-4 fw-bolder text-center">Blood Donation Camp</h5>
+            <p class="card-text">Be a lifesaver by participating in the Blood Donation Camp organized by the NSS unit of SIESGST. Contribute to the noble <a href='activity.html?activity=activity%2010' onclick="updateActivityContent(activities['activity 10']); return false;"> <i class="bi bi-three-dots"></i> </a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br><br>
+    <h1 class='mt-4 mb-4' style='font-weight: 700; text-align: center;' id="title">TIMELINE</h1>
+    <div class="container1">
+      <div class="timeline">
+        <ul>
+          <li>
+            <div class="timeline-content">
+              <!-- <h3 class="date">21st January, 2023</h3> -->
+              <h3>13th January, 2023</h3>
+              <h1>Announcement of Forms</h1>
+              <p>Signals the commencement of the NSS joining process</p>
+            </div>
+          </li>
+          <li>
+            <div class="timeline-content">
+              <h3>19th January, 2023</h3>
+              <h1>Submission of Forms</h1>
+              <p>Interested students submit their forms</p>
+            </div>
+          </li>
+          <li>
+            <div class="timeline-content">
+              <h3>20th January, 2023</h3>
+              <h1>Interview Rounds</h1>
+              <p>The comprehensive interviews, conducted by NSS heads</p>
+            </div>
+          </li>
+          <li>
+            <div class="timeline-content">
+              <h3>22th January, 2023</h3>
+              <h1>Selection and Training Sessions</h1>
+              <p>Newly selected members undergo orientation and training sessions</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    
+    <br>
+    <h1 class='mb-4' style='font-weight: 700; text-align: center;' id="title">SPONSORS</h1>
+    <br>
+    <div class="row mt-4 mb-4">
+      <!-- Sponsors in the first row -->
+      <div class="col-md-4 mb-4">
+          <img src="img/nss3.jpeg" class="img-fluid center-image" alt="Sponsor 1">
+      </div>
+      <div class="col-md-4 mb-4">
+          <img src="img/nss4.jpg" class="img-fluid center-image" alt="Sponsor 2">
+      </div>
+      <div class="col-md-4 mb-4">
+          <img src="img/nss5.jpeg" class="img-fluid center-image" alt="Sponsor 3">
+      </div>
+
+      <!-- Add more sponsor columns as needed -->
+  </div>
+
+  <div class="row mb-4">
+      <!-- Sponsors in the second row -->
+      <div class="col-md-4 mb-4">
+          <img src="img/nss8.jpeg" class="img-fluid center-image" alt="Sponsor 4">
+      </div>
+      <div class="col-md-4 mb-4">
+          <img src="img/nss9.jpeg" class="img-fluid center-image" alt="Sponsor 5">
+      </div>
+      <div class="col-md-4 mb-4">
+          <img src="img/nss10.jpg" class="img-fluid center-image" alt="Sponsor 6">
+      </div>
+  </div>
+    </div>
 </div>
 
 <div class="loader-wrapper">
@@ -166,8 +294,19 @@
       document.querySelector('.loader-wrapper').style.display = 'none';
       document.querySelector('.navbar').classList.remove('d-none');
     }, 700);
-  });
 
+    const clickableCards = document.querySelectorAll('.clickable-card');
+
+    clickableCards.forEach(function (card) {
+      card.addEventListener('click', function () {
+        const activityNumber = card.getAttribute('data-activity-number');
+        if (activityNumber) {
+          const url = `activity.html?activity=activity%20${encodeURIComponent(activityNumber)}`;
+          window.location.href = url;
+        }
+      });
+    });
+  });
 </script>
     
 </body>
