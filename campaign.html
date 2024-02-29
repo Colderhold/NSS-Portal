@@ -10,8 +10,10 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
 <script src="functions.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
   <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" data-bs-theme="dark">
     <div class="container-fluid">
@@ -88,7 +90,7 @@
   <div class="container-fluid">
     <div class="row mt-5 mb-4">
         <div class="col-md-6">
-          <div class="card rounded-5 clickable-card" data-activity-number="9"style='background: #f8f9fa;'>
+          <div class="card rounded-5 clickable-card" data-aos="fade-up" data-activity-number="9"style='background: #eeeeee'>
             <img src="img/nss8.jpeg" class="card-img-top rounded-5 img-thumbnail border border-5 border-dark" alt="...">
             <div class="card-body">
               <h5 class="card-title fs-4 fw-bolder text-center">Dream Run</h5>
@@ -98,7 +100,7 @@
         </div>
     
       <div class="col">
-        <div class="card rounded-5 clickable-card" data-activity-number="10" style='background: #f8f9fa;'>
+        <div class="card rounded-5 clickable-card" data-aos="fade-up" data-activity-number="10" style='background: #eeeeee'>
           <img src="img/nss9.jpeg" class="card-img-top rounded-5 img-thumbnail border border-5 border-dark" alt="...">
           <div class="card-body">
             <h5 class="card-title fs-4 fw-bolder text-center">Blood Donation Camp</h5>
@@ -112,7 +114,7 @@
     <h1 class='mt-4 mb-4' style='font-weight: 700; text-align: center;' id="title">TIMELINE</h1>
     <div class="container1">
       <div class="timeline">
-        <ul>
+        <ul data-aos="fade-up">
           <li>
             <div class="timeline-content">
               <!-- <h3 class="date">21st January, 2023</h3> -->
@@ -151,13 +153,13 @@
     <br>
     <div class="row mt-4 mb-4">
       <!-- Sponsors in the first row -->
-      <div class="col-md-4 mb-4">
+      <div class="col-md-4 mb-4" data-aos="fade-up">
           <img src="img/nss3.jpeg" class="img-fluid center-image" alt="Sponsor 1">
       </div>
-      <div class="col-md-4 mb-4">
+      <div class="col-md-4 mb-4" data-aos="fade-up">
           <img src="img/nss4.jpg" class="img-fluid center-image" alt="Sponsor 2">
       </div>
-      <div class="col-md-4 mb-4">
+      <div class="col-md-4 mb-4" data-aos="fade-up">
           <img src="img/nss5.jpeg" class="img-fluid center-image" alt="Sponsor 3">
       </div>
 
@@ -166,13 +168,13 @@
 
   <div class="row mb-4">
       <!-- Sponsors in the second row -->
-      <div class="col-md-4 mb-4">
+      <div class="col-md-4 mb-4" data-aos="fade-up">
           <img src="img/nss8.jpeg" class="img-fluid center-image" alt="Sponsor 4">
       </div>
-      <div class="col-md-4 mb-4">
+      <div class="col-md-4 mb-4" data-aos="fade-up">
           <img src="img/nss9.jpeg" class="img-fluid center-image" alt="Sponsor 5">
       </div>
-      <div class="col-md-4 mb-4">
+      <div class="col-md-4 mb-4" data-aos="fade-up">
           <img src="img/nss10.jpg" class="img-fluid center-image" alt="Sponsor 6">
       </div>
   </div>
@@ -309,5 +311,9 @@
   });
 </script>
     
+<script>
+  AOS.init();
+</script>
+
 </body>
 </html>
